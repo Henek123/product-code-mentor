@@ -19,13 +19,12 @@ main{
     align-items: center;
     width: 100%;
     padding: 80px;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1) ;
     min-width: 650px;
 }
 #container-main{
     display: flex;
     flex-flow: row nowrap;
-    width: 55%;
+    width: 65%;
     background-color: white;
     border-radius: 10px;
     min-width: 500px;
