@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Fraunces', serif;
+}
+#container{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    padding: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1) ;
+    min-width: 650px;
+}
+#container-main{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 55%;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 600px;
+}
+.image{
+    width: 100%;
+    max-width: 300px;
+    min-width: 260px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+    max-width: 300px;
+    min-width: 260px;
+}
+#container-desc{
+    min-width: 180px;
+    max-width: 300px;
+    margin-left: 30px;
+    
+}
+.spacing{
+    letter-spacing: 8px;
+    padding-top: 2em;
+}
+p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+.desc{
+    line-height: 1.5em;
+    margin-right: 1em;
+}
+#price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    min-width: 180px;
+    margin-top: 20px;
+}
+h1{
+    margin: 0.5em 0;
+    font-size: 28px;
+    width: 210px;
+}
+h2{
+    color: hsl(158, 36%, 37%);
+    font-size: 26px;
+    font-weight: 700;
+}
+h3{
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 14px;
+}
+#cart-button{
+    margin-top: 20px;
+    background-color: hsl(158, 36%, 37%);
+    width: 90%;
+    height: 2.5em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#cart-button p{
+    color: white;
+    margin-left: 10px;
+}
+#cart-button:hover{
+    cursor: pointer;
+    background-color: hsl(212, 21%, 14%)
+}
+@media (max-width: 700px){
+    #container-main{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    #container{
+        width: 100%;
+    }
+    #container-main{
+        width: 300px;
+        min-width: unset;
+    }
+    .image{
+        width: 300px;
+    }
+    .image img{
+        content: url("images/image-product-mobile.jpg");
+        border-radius: 10px 10px 0 0;
+        width: 300px;
+    }
+}
